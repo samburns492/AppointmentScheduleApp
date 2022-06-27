@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1194.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.customerController">
+   <children>
+      <TextField fx:id="custId2" disable="true" editable="false" layoutX="79.0" layoutY="465.0" prefHeight="25.0" prefWidth="61.0" />
+      <TextField fx:id="custName" layoutX="164.0" layoutY="464.0" prefHeight="25.0" prefWidth="94.0" />
+      <TextField fx:id="custPhone" layoutX="288.0" layoutY="464.0" prefHeight="25.0" prefWidth="129.0" />
+      <TextField fx:id="custAddress" layoutX="447.0" layoutY="465.0" prefHeight="25.0" prefWidth="149.0" />
+      <ChoiceBox fx:id="custDivN" layoutX="614.0" layoutY="465.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="custCountry" layoutX="784.0" layoutY="465.0" prefHeight="25.0" prefWidth="64.0" />
+      <TextField fx:id="custPC" layoutX="870.0" layoutY="464.0" prefHeight="25.0" prefWidth="94.0" />
+      <DatePicker fx:id="custCD" layoutX="88.0" layoutY="524.0" showWeekNumbers="true" />
+      <TextField fx:id="custCB" layoutX="288.0" layoutY="525.0" prefHeight="25.0" prefWidth="94.0" />
+      <DatePicker fx:id="custLU" layoutX="400.0" layoutY="525.0" />
+      <TextField fx:id="custLUB" layoutX="595.0" layoutY="524.0" prefHeight="25.0" prefWidth="94.0" />
+      <Label layoutX="100.0" layoutY="438.0" text="ID#" />
+      <Label layoutX="195.0" layoutY="437.0" text="Name" />
+      <Label layoutX="500.0" layoutY="438.0" text="Address" />
+      <Label layoutX="885.0" layoutY="441.0" text="Postal Code" />
+      <Label layoutX="336.0" layoutY="437.0" text="Phone" />
+      <Label layoutX="144.0" layoutY="501.0" text="Create Date" />
+      <Label layoutX="436.0" layoutY="501.0" text="Last Updated" />
+      <Label layoutX="306.0" layoutY="501.0" text="Created By" />
+      <Label layoutX="599.0" layoutY="501.0" text="Last Updated By" />
+      <Label layoutX="667.0" layoutY="438.0" text="Division" />
+      <Label layoutX="794.0" layoutY="441.0" text="Country" />
+      <TableView fx:id="customerTable" layoutX="88.0" layoutY="41.0" prefHeight="353.0" prefWidth="1022.0">
+        <columns>
+          <TableColumn fx:id="custidCol" prefWidth="75.0" text="ID# " />
+          <TableColumn fx:id="custNameCol" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="addressCol" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="postCodeCol" prefWidth="75.0" text="Post Code" />
+            <TableColumn fx:id="phoneCol" prefWidth="75.0" text="Phone" />
+            <TableColumn fx:id="createDateCol" prefWidth="75.0" text="Create Date" />
+            <TableColumn fx:id="createByCol" prefWidth="75.0" text="Created By" />
+            <TableColumn fx:id="clastUpdateCol" prefWidth="75.0" text="Last Update" />
+            <TableColumn fx:id="lastUpdateByCol" prefWidth="145.0" text="Last Update By" />
+            <TableColumn fx:id="custDivIDCol" prefWidth="69.0" text="Division ID" />
+            <TableColumn fx:id="custDivCol" prefWidth="103.0" text="Division" />
+            <TableColumn fx:id="countryCol" prefWidth="104.0" text="Country " />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
